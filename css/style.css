@@ -1,4 +1,4 @@
-
+/* SITE header */
 .site-header {
   background-color: white;
 }
@@ -31,6 +31,8 @@
 .header-list li{
   display: inline-block;
 }
+
+/* SITE HERO */
 .hero {
   width: 1440px;
   background-color: #252420;

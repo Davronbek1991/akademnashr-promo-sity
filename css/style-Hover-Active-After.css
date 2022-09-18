@@ -1,0 +1,51 @@
+*:focus {
+  outline: 3px solid #FF7500;
+  font-size: 17px;
+}
+
+.sitenav-link a:focus {
+  font-size: 17px;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.3;
+}
+
+.sitenav-link a:hover {
+  font-size: 16px;
+  color: #ff7500;
+}
+.sitenav-link a:active {
+  opacity: 0.6;
+}
+
+.main-button:hover {
+  font-size: 15px;
+  background-color: #ca7327;
+  color:darkgrey;
+  opacity: 0.6;
+}
+
+.main-button:active {
+  background-color: #FF7500;
+  opacity: 0.6;
+}
+
+.social-network a:hover {
+  color: #FF7500;
+}
+.social-network svg:active {
+  opacity: 0.6;
+  }
+
+.footer-link a:hover {
+  color: #FF7500;
+  font-size: 18px;
+}
+
+.footer-link a:active {
+  opacity: 0.6;
+}

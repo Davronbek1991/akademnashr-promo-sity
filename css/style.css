@@ -16,15 +16,30 @@ body {
 
 .site-header {
   display: flex;
+  justify-content:space-between;
+  align-items: center;
   background-color: white;
 }
 
 .main-logo {
   width: 230px;
 }
-.sitenav-link{
-  justify-content: flex-end;
+
+.nav-header-top {
+  display: flex;
+  align-items: center;
 }
+
+.header-list {
+  display: flex;
+  list-style-type: none;
+}
+
+#sitenav-link__header a {
+  color: #ff7500;
+  text-decoration:underline;
+}
+
 .sitenav-link a{
   font-weight: 500;
   font-size: 13px;
@@ -32,26 +47,34 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+  transition: color 0.4s ease,
+  opacity 0.2s ease,
+  font-size 0.4s ease;
  }
 
 .main-button {
   width: 155px;
   height: 39px;
   font-size: 13px;
-  font-weight: 700  ;
+  font-weight: 700;
   background-color: #ff7500;
   color: white;
   border-style: none;
   border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s ease,
+   background-color 0.4s ease,
+   font-size 0.4s ease,
+  color 0.4s ease;
 }
 
-.header-list li{
-  display: inline-block;
-}
+
 
 /* SITE HERO */
 .hero {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1440px;
   background-color: #252420;
   color: white;
@@ -76,7 +99,7 @@ body {
   width: 510px;
   height: 510px;
 }
-/* SECTION-FUTER */
+/* SECTION-FEATURE */
 .features {
   width: 1440px;
   background-color: #FFFFFF;
@@ -124,6 +147,7 @@ body {
 .action {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 1100px;
   background-color: #252420;
   color: white;
@@ -149,6 +173,7 @@ body {
   width: 440px;
   height: 440px;
   object-fit: cover;
+  border-radius: 12px;
 }
 /* FOOTERS */
 .footers {
@@ -158,13 +183,19 @@ body {
 
 .footer-main {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .social-network {
   width: 104px;
+  display: flex;
+  list-style-type: none;
 }
-.social-network li{
-display: inline-block;
+.social-network a {
+  color: black;
+  transition: color 0.4s ease,
+  opacity 0.2s;
 }
 
 .footer-hr {
@@ -188,4 +219,7 @@ display: inline-block;
   line-height: 19px;
   color: #252420;
   text-decoration: none;
+  transition: color 0.4s ease,
+  opacity 0.2s ease,
+  font-size 0.4s ease;
 }

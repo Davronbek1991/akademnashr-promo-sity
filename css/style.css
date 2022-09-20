@@ -25,12 +25,22 @@ body {
 .nav-header-top {
   display: flex;
   align-items: center;
-  padding: 0;
 }
 
 .header-list {
   display: flex;
+  margin: 0;
+  margin-right: 32px;
+  padding: 0;
   list-style-type: none;
+}
+
+.sitenav-link {
+  margin-right: 32px;
+}
+
+.sitenav-link:last-child {
+  margin-right: 0;
 }
 
 #sitenav-link__header a {
@@ -89,12 +99,21 @@ body {
   height: 3px;
   background-color: #ff7500;
   border-style: none;
+  margin: 0;
+  margin-bottom: 40px;
 }
 .hero-title {
-  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+  margin-top: 0;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.2;
+  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+}
+
+.hero-paragraph {
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .hero-img {
@@ -108,17 +127,29 @@ body {
   padding-bottom: 210px;
 }
 .feature-title {
-  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+  width: 440px;
+  margin: 0;
+  margin-bottom: 72px;
   font-size: 72px;
   font-weight: 700;
-  letter-spacing: 0.5PX;
   line-height: 1.2;
+  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+  letter-spacing: 0.5PX;
 }
 .feature-list {
   display: flex;
-  justify-content: space-between;
   padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.feature-item {
+  width: 340px;
+  margin-right: 40px;
+}
+
+.feature-item:last-child {
+  margin-right: 0;
 }
 
 .feature-list__img {
@@ -154,13 +185,24 @@ body {
 
 .action-text, .action-paragraph {
   width: 440px;
+  margin: 0;
+  margin-bottom: 12px;
 }
 
+.action-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.section-action__paragraph {
+  margin-bottom: 24px;
+}
 .action-title {
-  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
-  font-size: 40px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 40px;
   line-height: 48px;
+  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
 }
 
 
@@ -192,9 +234,12 @@ body {
   display: flex;
   align-items: center;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
-.social-network a {
+
+.site-footer__social a {
+  margin-right: 16px;
   color: black;
   transition: color 0.4s ease,
   opacity 0.2s;

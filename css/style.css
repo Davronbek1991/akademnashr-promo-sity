@@ -247,8 +247,10 @@ body {
 
 .footer-hr {
   height: 2px;
-  background-color: rgba(37, 36, 32, 0.5);
   border-style: none;
+  margin-top: 40px;
+  margin-bottom: 64px;
+  background-color: rgba(37, 36, 32, 0.5);
 }
 
 .footer-links {
@@ -257,8 +259,14 @@ body {
 
 .footer-link {
   width: 224px;
-  list-style-type: none;
   padding: 0;
+  margin: 0;
+  margin-right: 68px;
+  list-style-type: none;
+}
+
+.footer-link:last-child {
+  margin-right: 0;
 }
 
 .footer-link a {

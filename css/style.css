@@ -239,10 +239,15 @@ body {
 }
 
 .site-footer__social a {
+  display: block;
   margin-right: 16px;
   color: black;
   transition: color 0.4s ease,
   opacity 0.2s;
+}
+
+.site-footer__social svg {
+  display: block;
 }
 
 .footer-hr {
@@ -273,7 +278,7 @@ body {
   line-height: 19px;
   color: #252420;
   text-decoration: none;
-  transition: color 0.4s ease,
+  transition: color 0.3s ease,
   opacity 0.2s ease,
   font-size 0.4s ease;
 }

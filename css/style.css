@@ -22,6 +22,10 @@ body {
   width: 230px;
 }
 
+.main-logo img {
+  display: block;
+}
+
 .nav-header-top {
   display: flex;
   align-items: center;

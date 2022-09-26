@@ -1,21 +1,35 @@
-/* SITE header */
-
-body {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  font-size: 16px;
-  line-height: 1.5;
+* {
+  box-sizing: border-box;
 }
 
+/* SITE header */
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Roboto", "Arial", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .site-header {
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
   border-top: 5px solid #ff7500;
   background-color: white;
+}
+.site-header__container {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
 }
 
 .main-logo {
@@ -87,13 +101,16 @@ body {
 
 /* SITE HERO */
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #252420;
   color: white;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .hero-text {
   width: 390px;
@@ -124,6 +141,7 @@ body {
   width: 510px;
   height: 510px;
   border-radius: 9px;
+  box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6) ;
 }
 /* SECTION-FEATURE */
 .features {
@@ -162,29 +180,41 @@ body {
   align-items: center;
   width: 100px;
   height: 100px;
-  background: rgba(255, 117, 0, 0.2);
+  margin-bottom: 32px;
   border-radius: 50%;
+  background: rgba(255, 117, 0, 0.2);
 }
 .feature-icon {
   list-style: none;
 }
 
 .feature-list__title {
-  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+  margin-top: 0;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 24px;
+  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
   line-height: 1.2;
+}
+
+.feature-paragraph {
+  margin: 0;
 }
 
   /* ACTION */
 .action {
-  /* width: 1100px; */
+  padding-top: 130px;
+  padding-bottom: 160px;
+}
+
+.action-container {
+  border-radius: 12px;
+  background-color: #252420;
+  color: white;
+  padding: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #252420;
-  color: white;
- border-radius: 12px;
 }
 
 .action-text, .action-paragraph {
@@ -276,6 +306,14 @@ body {
 
 .footer-link:last-child {
   margin-right: 0;
+}
+
+.footer-link li {
+  margin-bottom: 16px;
+}
+
+.footer-link li:last-child {
+  margin-bottom: 0;
 }
 
 .footer-link a {

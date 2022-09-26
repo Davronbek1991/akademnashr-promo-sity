@@ -1,6 +1,7 @@
 *:focus {
   outline: 3px solid #FF7500;
   font-size: 17px;
+  outline-offset: 3px;
 }
 
 .sitenav-link a:focus {
